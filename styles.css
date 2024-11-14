@@ -18,8 +18,9 @@ html, body {
     flex: 0 0 auto;
     background-color: #f0f0f0;
     padding: 10px;
-    text-align: center;
+    
     width: 100%;
+
 }
 
 .list-container {
@@ -28,3 +29,33 @@ html, body {
     padding: 10px;
     width: 100%;
 }
+
+#book-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+
+}
+
+#book-container div {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+
+ form {
+    display: flex;
+    flex-direction: column;
+ }

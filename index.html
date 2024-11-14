@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
+
+    <dialog>
+        <h2>Lets add a new book!</h2>
+        <div class="modal-content">
+            <form method="dialog">
+                <label for="BookTitle">Book Title:</label>
+                <input type="text" id="BookTitle" placeholder="Enter the title here!">
+
+                <label for="BookAuthor">Book Author:</label>
+                <input type="text" id="BookAuthor" placeholder="Enter the Author here!">
+
+                <label for="BookPages">Pages:</label>
+                <input type="text" id="BookPages" placeholder="How many pages?">
+
+                <label for="CurrentlyReading">Reading Status:</label>
+                <input type="text" id="CurrentlyReading" placeholder="Currently reading or finished?">
+
+                <button id="close-button">OK</button>
+        </div>
+        </form>
+    </dialog>
+
     <div class="body-container">
-        <div class="top-banner">top</div>
-        <div class = "list-container">list container</div>
+        <div class="top-banner">top
+            <button id="add-book-button">Add a new book!</button>
+        </div>
+        <div class = "list-container">list container
+            <div id ="book-container">
+                
+            </div>
+        </div>
         <div class="footer-banner">footer-banner</div>
     </div>
 </body>
