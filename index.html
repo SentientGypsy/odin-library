@@ -21,25 +21,26 @@
 
                 <label for="BookPages">Pages:</label>
                 <input type="text" id="BookPages" placeholder="How many pages?">
-
-                <label for="CurrentlyReading">Reading Status:</label>
-                <input type="text" id="CurrentlyReading" placeholder="Currently reading or finished?">
-
+                <div class="dialog-checkbox-container">
+                    <label for="CurrentlyReading">Have you finished it? :</label>
+                    <input type="checkbox" id="CurrentlyReading">
+                </div>
                 <button id="close-button">OK</button>
         </div>
         </form>
     </dialog>
 
     <div class="body-container">
-        <div class="top-banner">top
-            <button id="add-book-button">Add a new book!</button>
+        <div class="top-banner">
+            <h1 id="welcome-banner">Welcome to the Library</h1>
+            <button id="add-book-button"><div class="add-book-text">add a new book!</div> <div> <img src="./icons/book-open-cover.png" style="width: 25px; height: 25px;"></div></button>
         </div>
-        <div class = "list-container">list container
+        <div class = "list-container">
             <div id ="book-container">
                 
             </div>
         </div>
-        <div class="footer-banner">footer-banner</div>
+        <div class="footer-banner"><div class="footer-text">sentientgypsy@github.com</div></div>
     </div>
 </body>
 </html>
