@@ -41,9 +41,19 @@ close_button_form.addEventListener("click", () => {
     dialog.close();
 });
 
+class Book {
+    constructor(title, author, pages, haveReadBookBefore){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.haveReadBookBefore = haveReadBookBefore;
+    }
+}
+
 
 
 //constructor here
+/*
 function Book(title, author, pages, haveReadBookBefore) {
     this.title = title;
     this.author = author;
@@ -51,7 +61,7 @@ function Book(title, author, pages, haveReadBookBefore) {
     this.haveReadBookBefore = haveReadBookBefore;
 
 }
-
+*/
 function addBookToLibray(bookTitle, bookAuthor, bookPages, haveReadBookBefore) {
     var book = new Book(bookTitle, bookAuthor, bookPages, haveReadBookBefore);
 
