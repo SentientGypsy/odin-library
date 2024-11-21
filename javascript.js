@@ -121,6 +121,7 @@ function createBookCard(book, index) {
         
         
         book_card_list.appendChild(li);
+        
     });
     
 
